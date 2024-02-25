@@ -1,0 +1,99 @@
+Q) nums=[1,2,4,3,5]
+   If we want to add 1 more element in nums using append(), how much time will it take to get added.
+A) 1 sec; because it will directly be added at the last of the list.
+
+
+------
+
+* pop() method will take 1 sec to remove; because last element will be removed.
+
+-----
+
+Ex: nums = [5,2,4,3,1]
+    If we want to remove '1' using remove(), how much time it will take.
+A)  5 sec.
+
+For time complexity, we have to always say Worst Case Time Complexity.
+
+
+-----
+Q) How will you explain Time Complexity in simple terms ?
+A) Worst Case Time Complexity
+
+-----
+
+Big O notation :-
+
+* In order to add an element in list using append(), the time complexity is O(1).
+* In order to delete in list using pop(), the time complexity is O(1).
+* In order to delete an element in list using pop(index), the time complexity is O(1).
+* In order to delete an element in list using remove(), the time complexity is O(n).
+
+-----
+
+Sets:-
+
+In programming languages, inorder to provide without duplications, sets are designed.
+Ex: nums = {1,2,1}
+    print (num)
+
+  o/p : {1,2}
+
+
+
+* Inorder to add an element in a set,
+  Ex: nums = {1,2,1}
+      nums.add(4)
+      print(nums)
+
+  o/p : {1,2,4}
+
+
+
+* To remove an element in a set,
+  Ex: nums = {1,2,1,4}
+      nums.remove(1)
+      print(nums)
+
+   o/p : {2,4}
+
+
+---------
+
+Q) Inorder to find the time complexity to search an element 'n' in a set is ?
+
+
+Hashing :
+
+Importance of Prime number in programming,
+
+Let us consider the prime number to be 23 and let us consider the entered number in a set be '6'
+
+memory = 23 * 6
+
+Hash Table as KEY : VALUE pairs.
+KEY is the memory address.
+
+138 : 6
+
+Time Complexity to calculate 23*6 is 1 sec.
+So, it is  O(1).
+
+Then inorder to search 6, it will multiply 23*6 and directly go to 138 location and retrieve.
+Therefore, Time Complexity to search an element 'n' in a set is O(1).
+
+
+We need to consider bigger prime number to avoid collision.
+For a different value, if we get the same possibility key, then it is called collision.
+
+
+In Hashing, a table known as 'Hash Table' will be created in memory.
+Outside, the lable will be 'Key'.
+Inside, will be the entered 'Value'.
+Inorder to search 6 what will hashing function do ?
+Whichever prime number we consider (23), with that prime number only hashing function will multiply with the 'to be searched element (6)', then the result will be 138.
+Then it will directly go to 138 location and brings 6.
+So, time complexity is 1 sec.
+
+
+
